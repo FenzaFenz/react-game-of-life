@@ -90,8 +90,8 @@ const GameOfLife = ({size}: IGameOfLifeProps) => {
     return (<div className={css.wrapper}>
         <Controls isStarted={isStarted} onStart={onStart} onRandomize={randomizeField} onStop={onStop} />
         <div className={css.cellContainer}>
-            {cells.map((row, x) => (<div className={css.row}>
-                {row.map((cell, y) => <Cell onClick={() => onCellClick(x, y)} isAlive={cell}/>)}
+            {cells.map((row, x) => (<div key={`${x}`} className={css.row}>
+                {row.map((cell, y) => <Cell key={`${x}.${y}`} onClick={() => onCellClick(x, y)} isAlive={cell}/>)}
             </div>))}
         </div>
     </div>);
