@@ -1,0 +1,33 @@
+.wrapper {
+    padding: 10px;
+}
+
+.row {
+    white-space: nowrap;
+}
+
+.cellContainer {
+    font-size: 0;
+}
+
+.cell {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9e9e9e;
+    box-sizing: border-box;
+}
+
+.aliveCell {
+    background: green;
+}
+
+.form {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.form button, .form input {
+    margin: 5px;
+    padding: 10px;
+}
